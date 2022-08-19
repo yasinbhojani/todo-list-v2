@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  transition: all 0.3s;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #474bff;
+  background: -webkit-linear-gradient(38deg, #474bff 0%, #bc48ff 100%);
+  background: linear-gradient(38deg, #474bff 0%, #bc48ff 100%);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+footer {
+  width: 100%;
+  margin-top: auto;
+  position:fixed;
+  top: 80%;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer button {
+  border: none;
+  cursor: pointer;
+  box-shadow: 7px 7px 29px -0.5px rgba(0, 0, 0, 0.71);
+}
+
+.container {
+  max-width: 500px;
+  min-width: 500px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.input-container,
+.list-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background-color: #ffffff;
+  border-radius: 0.45rem;
+  -webkit-box-shadow: 7px 7px 29px -0.5px rgba(68, 68, 68, 0.71);
+  -moz-box-shadow: 7px 7px 29px -0.5px rgba(68, 68, 68, 0.71);
+  box-shadow: 7px 7px 29px -0.5px rgba(68, 68, 68, 0.71);
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.input-container #input,
+.input-container #input-btn {
+  border-radius: 0.2rem;
+}
+
+.input-container #input {
+  height: 22px;
+  width: 60%;
+  padding: 10px 15px;
+  border: 2px solid #808080aa;
+}
+
+#input::placeholder {
+  color: #808080aa;
+}
+
+.input-container #input-btn {
+  width: 18%;
+  border: none;
+  background-color: #6852e7;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.input-container #input-btn:hover {
+  background-color: #634cea;
+}
+
+.list-container {
+  min-height: 250px;
+  position: relative;
+}
+
+.list-container > img {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.list-container .list {
+  margin: 0;
+  padding: 5px 10px;
+}
+
+.list div {
+  display: flex;
+  flex-direction: column;
+  padding: 7px 0;
+}
+
+.list div p {
+  margin: 0;
+}
+
+.list div span {
+  color: #808080;
+  font-size: 0.7rem;
+}
+
+.list li {
+  border-bottom: 1px solid #80808077;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+.list li button {
+  background-color: #6852e7;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.list li button:hover {
+  background-color: #634cea;
+}
+
+.list li button img {
+  width: 25px;
+  height: 25px;
+}
+
+.strike {
+  text-decoration: line-through;
+  color: #808080aa;
+}
+
+.display-none {
+  display: none;
+}
+
+/* !!!!!!!!!! */
+/* dark theme */
+.dark {
+  background: #473a8a;
+  background: -webkit-linear-gradient(38deg, #473a8a 0%, #39393a 100%);
+  background: linear-gradient(38deg, #473a8a 0%, #39393a 100%);
+}
+
+.dark .input-container,
+.dark .list-container {
+  background-color: #333;
+}
+
+.dark .input-container #input {
+  background-color: #333;
+  color: #eee;
+}
+
+.dark .list {
+  color: #eee;
+}
+
+.dark footer button{
+  background-color: #333;
+  border: none;
+  color: white;
+}
